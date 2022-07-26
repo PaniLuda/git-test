@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body">
+  <div class="bg bg--1"></div>
+
+  <div class="container">
+    <h1 class="home"><a href="../index.html">На главную</a></h1>
+
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a href="articles.html" class="navbar-link">Статьи</a></li>
+        <li class="navbar-item"><a href="catalog.html" class="navbar-link">Каталог</a></li>
+        <li class="navbar-item"><a href="contacts.html" class="navbar-link">Контакты</a></li>
+        <li class="navbar-item"><a href="gallery.html" class="navbar-link">Галерея</a></li>
+        <li class="navbar-item"><a href="page-nav.html" class="navbar-link">Навигация</a></li>
+        <li class="navbar-item"><a href="registration.html" class="navbar-link">Регистрация</a></li>
+      </ul>
+    </nav>
+
+    <div class="container container--3">
+      <h1 class="articles-title__page">Контакты</h1>
+      <div class="address">
+        <h2><i>Адрес:</i></h2>
+        <h3>Украина, г.Киев, пр-т Ак.Глушкова, 1А</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10177.468719903509!2d30.470808!3d50.3783534!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c925f682307f%3A0xe209c4e4786141f8!2sDance%20Space!5e0!3m2!1suk!2sde!4v1657301563217!5m2!1suk!2sde"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <form action="https://tests.fomenko.top/echo/index.php" method="GET">
+        <fieldset>
+          <legend>Обратная связь</legend>
+          <div>
+            <label for="name">Имя</label>
+            <input name="name" id="name" type="text" placeholder="Введите имя...">
+          </div>
+          <div>
+            <label for="phone">Номер телефона</label>
+            <input type="tel" name="phone" id="phone" placeholder="+38(000)-000-00-00">
+          </div>
+          <div>
+            <label for="email">Электронная почта</label>
+            <input name="email" id="email" type="email" placeholder="Введите е-mail">
+          </div>
+          <div>
+            <label for="text">Вопрос</label>
+            <textarea cols="50" rows="15" id="text" name="text" placeholder="Задайте вопрос..."></textarea>
+          </div>
+          <div>
+            <button type="submit">Отправить вопрос</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>&copy; Panasenko Mila</div>
+  </footer>
+</body>
+
+</html>

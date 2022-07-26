@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body">
+  <div class="bg bg--1"></div>
+
+  <div class="container">
+    <h1 class="home"><a href="../index.html">На главную</a></h1>
+
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a href="articles.html" class="navbar-link">Статьи</a></li>
+        <li class="navbar-item"><a href="catalog.html" class="navbar-link">Каталог</a></li>
+        <li class="navbar-item"><a href="contacts.html" class="navbar-link">Контакты</a></li>
+        <li class="navbar-item"><a href="gallery.html" class="navbar-link">Галерея</a></li>
+        <li class="navbar-item"><a href="page-nav.html" class="navbar-link">Навигация</a></li>
+        <li class="navbar-item"><a href="registration.html" class="navbar-link">Регистрация</a></li>
+      </ul>
+    </nav>
+
+    <div class="container container--3">
+      <h1 class="articles-title__page">Регистрация запроса на спонсорство</h1>
+      <form action="https://tests.fomenko.top/echo/index.php" method="GET" class="form">
+        <fieldset>
+          <div class="form-group">
+            <label class="form-label" for="surname">Фамилия</label>
+            <input class="form-label-name" name="fio" id="surname" type="text" placeholder="Введите фамилию...">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-label-name" name="fio" id="name" type="text" placeholder="Введите имя...">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="photo">Фото</label>
+            <input name="photo" id="photo" type="file">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Электронная почта</label>
+            <input name="email" id="email" type="email" placeholder="Введите е-mail">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="pass">Пароль</label>
+            <input name="password" id="pass" type="password" placeholder="Введите пароль" minlength="6" maxlength="12">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="site">Ваш сайт или ссылка на профиль в соцсетях</label>
+            <input type="url" id="site" placeholder="Сайт" name="site" value="https://mysite.name">
+          </div>
+          <div class="form-group form-group-inline">
+            <input value="gender-male" id="gender-male" type="radio" name="gender">
+            <label class="form-label-inline" for="gender-male">Мужской</label>
+          </div>
+          <div class="form-group form-group-inline">
+            <input value="gender-female" id="gender-female" type="radio" name="gender">
+            <label class="form-label-inline" for="gender-female">Женский</label>
+          </div>
+          <div class="form-group form-group-inline">
+            <label for="date">Дата рождения</label>
+            <input type="date" id="date" name="date">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="form-group">
+            <label for="list">Производитель</label>
+            <select name="list" id="list">
+              <option value="">Выберите</option>
+              <option value="International">International</option>
+              <option value="RayRose">Ray Rose</option>
+              <option value="Aida">Aida</option>
+              <option value="danceMe">Dance Me</option>
+              <option value="grandPrix">Grand Prix</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Выберите необходимый тип обуви</legend>
+          <div class="form-group">
+            <input class="check" id="check1" type="checkbox" name="standart" value="on">
+            <label class="form-label-inline" for="check1">Стандарт</label>
+          </div>
+          <div class="form-group">
+            <input id="check2" type="checkbox" name="latin" value="on">
+            <label class="form-label-inline" for="check2">Латина</label>
+          </div>
+          <div class="form-group">
+            <input id="check3" type="checkbox" name="flamenco" value="on">
+            <label class="form-label-inline" for="check3">Фламенко</label>
+          </div>
+          <div class="form-group">
+            <input id="check4" type="checkbox" name="jazz" value="on">
+            <label class="form-label-inline" for="check4">Джазовки</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="form-group">
+            <label class="form-label" for="text">О себе</label>
+            <textarea cols="50" rows="10" id="text" name="text" placeholder="Напишите немного о себе..."></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-group">
+            <button type="submit" class="btn">Отправить запрос</button>
+          </div>
+        </fieldset>
+
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div>&copy; Panasenko Mila</div>
+  </footer>
+</body>
+
+</html>
